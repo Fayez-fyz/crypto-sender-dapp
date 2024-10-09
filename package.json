@@ -1,0 +1,24 @@
+{
+  "name": "smart-contract",
+  "version": "1.0.0",
+  "description": "crypto sender",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy-ignition": "npx hardhat ignition deploy ./ignition/modules/Transactions.js --network volta",
+    "verify-ignition": "npx hardhat ignition verify ./ignition/modules/Transactions.js --network volta"
+  },
+  "keywords": [
+    "crypto",
+    "web3",
+    "etherum"
+  ],
+  "author": "Fayez",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.3",
+    "hardhat": "^2.22.12"
+  }
+}
